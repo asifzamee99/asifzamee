@@ -9,22 +9,24 @@
 </head>
 <body class="is-preload">
 
-    <!-- Wrapper -->
     <div id="wrapper">
 
-        <!-- Header -->
         <header id="header">
             <div class="logo">
                 <span class="icon fa-user"></span>
             </div>
             <div class="content">
                 <div class="inner">
-                    <!-- 👇 Circular Profile Picture -->
                     <div style="text-align: center; margin-bottom: 1rem;">
                         <img src="images/pp2.jpeg" alt="Profile Picture" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #fff;" />
                     </div>
                     <h1>ASIF ABDULLAH ZAMEE</h1>
                     <p>Electrical Engineer | Embedded Systems & PCB Designer | Machine Learning Enthusiast | IoT & Automation Developer | Edge Computing Advocate</p>
+                    
+                    <ul class="actions" style="margin-top: 2rem;">
+                        <li><a href="resume.pdf" class="button icon solid fa-download" download>Download Resume</a></li>
+                    </ul>
+
                 </div>
             </div>
             <nav>
@@ -38,37 +40,40 @@
             </nav>
         </header>
 
-        <!-- Main -->
         <div id="main">
 
-            <!-- Intro -->
             <article id="intro">
                 <h2 class="major">Introduction</h2>
                 <span class="image main"><img src="images/pp.jpeg" alt="Profile Picture" /></span>
-                <p>I am a passionate Electrical and Electronics Engineering graduate with extensive experience in developing innovative solutions like fire mitigation systems. My expertise spans machine learning, image processing, and embedded systems.</p>
+                <p>I am an Electrical and Electronic Engineering graduate (Class of 2025) from BRAC University with a major in Robotics and Intelligent Systems. My engineering philosophy centers on Smart Integration—combining robust hardware design with advanced machine learning algorithms.
+
+My professional experience includes an apprenticeship at Palki Motors Limited, where I led R&D initiatives in EV battery design, BMS calibration, and CAN network optimization. Beyond automotive tech, I am deeply invested in Edge AI, demonstrated by my award-winning capstone project, Pyrosentry, which utilizes convolutional neural networks for real-time fire localization. I am passionate about developing sustainable, intelligent solutions that solve real-world problems.</p>
             </article>
 
-            <!-- Work section is hidden -->
-            <!--
             <article id="work">
                 <h2 class="major">Work</h2>
                 <span class="image main"><img src="images/work.jpeg" alt="Work Showcase" /></span>
+                
+                <h3>Palki Motors Limited</h3>
+                <h4>Electrical Apprentice</h4>
+                
                 <ul>
-                    <li><b>Fire Mitigation System:</b> Integrated YOLOv8 for fire detection, later optimized with NCNN for Raspberry Pi performance.</li>
-                    <li><b>Face Tracking:</b> Developed a servo-controlled face-tracking system using Raspberry Pi and image processing techniques.</li>
-                    <li><b>Image Processing Projects:</b> Implemented advanced techniques like contrast stretching, noise reduction, and unsharp masking.</li>
+                    <li>Led EV battery design support, focusing on advanced BMS calibration, optimization, and troubleshooting (including cell balancing and QA development).</li>
+                    <li>Established CAN network communication and performed parameter optimization for motor controllers and chargers.</li>
+                    <li>Developed and troubleshot embedded firmware (ESP32) for Odometer systems and implemented BLE connectivity solutions for remote BMS monitoring.</li>
+                    <li>Designed load-calculated vehicle wiring harnesses and provided specialized technical support for charging systems.</li>
+                    <li>Executed comprehensive vehicle diagnostics, fault troubleshooting, and physical vehicle testing (acceleration, braking, center of gravity).</li>
+                    <li>Optimized system efficiency through detailed mileage estimation and AC/HVAC system load calculation studies.</li>
+                    <li>Contributed to R&D initiatives focused on improving system reliability, utilizing skills in technical documentation, research, and component sourcing.</li>
                 </ul>
             </article>
-            -->
 
-            <!-- Projects -->
             <article id="projects">
                 <h2 class="major">Projects</h2>
                 <h3>🔥 Featured Project</h3>
                 <h4>PyroSentry: Advanced Image-Based Fire Localization and Extinguishing Network</h4>
                 <p><strong>PyroSentry</strong> is a real-time fire detection and mitigation system using CNN-based image processing on edge devices like Raspberry Pi. It detects and localizes fire from live video, triggering targeted extinguishing via an embedded actuator system. LoRa enables long-range communication with ground stations. Designed for remote or high-risk areas, it offers a fast, autonomous response to fire hazards.</p>
 
-                <!-- Stacked Enlargable Images -->
                 <div style="display: flex; flex-direction: column; gap: 1rem; margin: 1rem 0;">
                     <img src="images/pyro1.jpeg" alt="Pyro Image 1" class="enlargeable" style="width: 100%; max-width: 600px; border-radius: 10px; cursor: pointer;" />
                     <img src="images/pyro2.jpeg" alt="Pyro Image 2" class="enlargeable" style="width: 100%; max-width: 600px; border-radius: 10px; cursor: pointer;" />
@@ -120,7 +125,6 @@
                 <p><strong>Skills:</strong> AutoCAD</p>
             </article>
 
-            <!-- Education -->
             <article id="education">
                 <h2 class="major">Education</h2>
                 <ul>
@@ -130,68 +134,60 @@
                 </ul>
             </article>
 
-<!-- Contact -->
-<article id="contact">
-    <h2 class="major">Contact</h2>
-    <form action="https://formspree.io/f/mldlednn" method="POST">
-        <div class="fields">
-            <div class="field half">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required />
-            </div>
-            <div class="field half">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required />
-            </div>
-            <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="4" required></textarea>
-            </div>
-        </div>
+            <article id="contact">
+                <h2 class="major">Contact</h2>
+                <form action="https://formspree.io/f/mldlednn" method="POST">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" required />
+                        </div>
+                        <div class="field half">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="4" required></textarea>
+                        </div>
+                    </div>
 
-        <!-- Optional hidden inputs -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="New message from portfolio site!">
-        <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New message from portfolio site!">
+                    <input type="hidden" name="_template" value="table">
 
-        <ul class="actions">
-            <li><input type="submit" value="Send Message" class="primary" /></li>
-            <li><input type="reset" value="Reset" /></li>
-        </ul>
-    </form>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" class="primary" /></li>
+                        <li><input type="reset" value="Reset" /></li>
+                    </ul>
+                </form>
 
-    <ul class="icons">
-        <li><a href="https://github.com/yourgithub" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-        <li><a href="https://linkedin.com/in/asif-abdullah-zamee-66408774" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-    </ul>
-</article>
-
+                <ul class="icons">
+                    <li><a href="https://github.com/yourgithub" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://linkedin.com/in/asif-abdullah-zamee-66408774" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                </ul>
+            </article>
 
         </div>
 
-        <!-- Lightbox Modal -->
         <div id="lightbox" style="display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
             <img id="lightbox-img" src="" alt="Enlarged View" style="max-width: 90%; max-height: 90%; border-radius: 10px;" />
         </div>
 
-        <!-- Footer -->
         <footer id="footer">
             <p class="copyright">&copy; Asif Abdullah Zamee.</p>
         </footer>
 
     </div>
 
-    <!-- BG -->
     <div id="bg"></div>
 
-    <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <!-- Lightbox Script -->
     <script>
         document.querySelectorAll('.enlargeable').forEach(img => {
             img.addEventListener('click', () => {
