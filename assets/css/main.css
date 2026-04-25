@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1656,3 +1659,85 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+/* =========================================
+   NEON THEME OVERRIDES 
+   ========================================= */
+
+:root {
+  --neon-cyan: #00f3ff;
+  --neon-purple: #b026ff;
+}
+
+/* Pulsing Avatar */
+.neon-avatar {
+  border: 2px solid var(--neon-cyan) !important;
+  box-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+  animation: neon-pulse-avatar 2s infinite alternate;
+}
+
+@keyframes neon-pulse-avatar {
+  from { box-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan); }
+  to { box-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan), 0 0 30px var(--neon-cyan); }
+}
+
+/* Typography Glow */
+.neon-text-primary {
+  color: #fff !important;
+  text-shadow: 0 0 5px #fff, 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan) !important;
+}
+
+.neon-text-secondary {
+  color: #fff !important;
+  text-shadow: 0 0 5px #fff, 0 0 10px var(--neon-purple), 0 0 20px var(--neon-purple) !important;
+}
+
+/* Interactive Neon Buttons */
+.neon-button {
+  background-color: transparent !important;
+  border-color: var(--neon-cyan) !important;
+  color: var(--neon-cyan) !important;
+  box-shadow: 0 0 5px var(--neon-cyan) inset, 0 0 5px var(--neon-cyan);
+  transition: all 0.3s ease-in-out !important;
+}
+
+.neon-button:hover {
+  background-color: var(--neon-cyan) !important;
+  color: #000 !important; /* High contrast text on hover */
+  box-shadow: 0 0 20px var(--neon-cyan) inset, 0 0 20px var(--neon-cyan);
+  text-shadow: none !important;
+}
+
+/* Logo Pulse */
+.neon-logo-pulse {
+  border-color: var(--neon-purple) !important;
+  box-shadow: 0 0 10px var(--neon-purple);
+  animation: neon-pulse-logo 1.5s infinite alternate;
+}
+
+@keyframes neon-pulse-logo {
+  from { box-shadow: 0 0 5px var(--neon-purple), inset 0 0 5px var(--neon-purple); }
+  to { box-shadow: 0 0 15px var(--neon-purple), inset 0 0 15px var(--neon-purple); }
+}
+
+/* Form Inputs */
+.neon-input:focus {
+  border-color: var(--neon-cyan) !important;
+  box-shadow: 0 0 10px var(--neon-cyan) !important;
+}
+
+/* Image Hover Effects */
+.neon-image-hover {
+  transition: box-shadow 0.3s ease;
+}
+.neon-image-hover:hover {
+  box-shadow: 0 0 20px var(--neon-purple);
+}
+
+/* Social Icons */
+.neon-social {
+  color: var(--neon-cyan) !important;
+  transition: all 0.3s ease;
+}
+.neon-social:hover {
+  text-shadow: 0 0 10px var(--neon-cyan);
+}
